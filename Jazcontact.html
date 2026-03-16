@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:pink;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:white;
+    padding:25px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:1 5px 20px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav h2{
+    color:#6C63FF;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#6C63FF;
+}
+
+/* SECTIONS */
+section{
+    min-height:100vh;
+    padding:120px 8% 80px;
+    display:flex;
+    align-items:center;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    animation:fadeInLeft 1s ease forwards;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#6C63FF;
+}
+
+.hero-text p{
+    margin-bottom:30px;
+    color:#555;
+}
+
+.buttons button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    margin-right:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.primary{
+    background:linear-gradient(45deg,#6C63FF,#7F7FD5);
+    color:white;
+}
+
+.primary:hover{
+    transform:translateY(-3px);
+}
+
+.secondary{
+    background:#e0e0ff;
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+    animation:fadeInRight 1s ease forwards;
+}
+
+.hero-img img{
+    width:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* ABOUT */
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#6C63FF;
+}
+
+.about p{
+    max-width:600px;
+    margin:auto;
+    color:#555;
+}
+
+/* PROJECTS */
+.projects{
+    flex-direction:column;
+    text-align:center;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* CONTACT */
+.contact{
+    flex-direction:column;
+    text-align:center;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:300px;
+    margin-top:30px;
+}
+
+.contact input, .contact textarea{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#6C63FF;
+    color:white;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInLeft{
+    from{opacity:0; transform:translateX(-50px);}
+    to{opacity:1; transform:translateX(0);}
+}
+
+@keyframes fadeInRight{
+    from{opacity:0; transform:translateX(50px);}
+    to{opacity:1; transform:translateX(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-img img{
+        margin-top:10px;
+        width:100px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/Jazabout.html">About</a></li>
+ <li><a href="/Jazskills.html">skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <section class="contact" id="contact">
+
+<center>
+<h2>Contact Me</h2>
+</center>
+
+<p> MY <span>SOCIAL MEDIA CONTACT</span> </p>
+
+<div class="social-links">
+
+<div class="card">
+<a href="https://www.facebook.com/share/16Np5hSBTD/" target="_blank">Facebook</a>
+</div>
+
+<div class="card">
+<a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=uxnvzoj" target="_blank">Instagram</a>
+</div>
+
+<div class="card">
+<a href="https://www.tiktok.com/@kenthhh24?_r=1&_t=ZS-94eWtqvNnLZ" target="_blank">TikTok</a>
+</div>
+
+</div>
+
+</section>
+</div>
+    </div> 
+</section>
+</body>
+</html> 
